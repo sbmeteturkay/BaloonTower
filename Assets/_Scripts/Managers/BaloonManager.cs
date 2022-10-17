@@ -9,12 +9,18 @@ namespace MeteTurkay{
 		[SerializeField] GameObject baloonPrefab;
 		[SerializeField] GameObject baloonParent;
 		[SerializeField] Rigidbody baloonHolder;
-
+		[SerializeField] DrawLines lineManager;
 		public void SpawnBaloon()
         {
 			var obj = Instantiate(baloonPrefab,baloonParent.transform.position-Vector3.up,Quaternion.identity, baloonParent.transform);
+			BaloonUnit baloonUnit = obj.GetComponent<BaloonUnit>();
+			lineManager.AddItem(baloonUnit.ropePoint);
+			//var joint = baloonHolder.gameObject.AddComponent<ConfigurableJoint>();
+			//joint.connectedBody = obj.GetComponent<BaloonUnit>().rigidbody;
+			//joint.axis = new Vector3(360, 360, 360);
+			baloonUnit.joint.connectedBody = baloonHolder;
 			//obj.GetComponent<BaloonUnit>().SetRopeHolder(baloonHolder.position);
-			obj.transform.DOScale(1, 1f);
+			obj.transform.DOScale(1, 2f);
         }
 	}
 }

@@ -15,12 +15,12 @@ namespace MeteTurkay{
             if (rb.position.y < 1.5)
             {
                 rb.AddForce(Vector3.up, ForceMode.Force);
-                rb.drag = 1;
+                rb.drag = 10;
             }
             else
             {
                 rb.AddForce(-1*Vector3.up, ForceMode.Force);
-                rb.drag = 10;
+                //rb.drag = 10;
             }
         }
     }

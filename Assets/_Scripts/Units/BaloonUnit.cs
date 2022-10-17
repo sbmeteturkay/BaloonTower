@@ -7,6 +7,9 @@ namespace MeteTurkay{
 	public class BaloonUnit : MonoBehaviour
 	{
 		public LineRenderer rope;
+		public Rigidbody rigidbody;
+		public Joint joint;
+		public GameObject ropePoint;
 
 		public void SetRopeHolder(Vector3 position)
         {
