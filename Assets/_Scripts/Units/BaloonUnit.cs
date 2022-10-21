@@ -10,8 +10,8 @@ namespace MeteTurkay{
 		public Rigidbody rigidbody;
 		public Joint joint;
 		public GameObject ropePoint;
-
-		public void SetRopeHolder(Vector3 position)
+		public MeshRenderer meshRenderer;
+        public void SetRopeHolder(Vector3 position)
         {
 			rope.SetPosition(0, transform.TransformPoint(position));
         }

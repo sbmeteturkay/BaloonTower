@@ -14,8 +14,8 @@ namespace MeteTurkay{
             speed = rb.velocity.magnitude;
             if (rb.position.y < 1.5)
             {
-                rb.AddForce(Vector3.up, ForceMode.Force);
-                rb.drag = 10;
+                rb.AddForce(Vector3.up*3, ForceMode.Force);
+                //rb.drag = 10;
             }
             else
             {

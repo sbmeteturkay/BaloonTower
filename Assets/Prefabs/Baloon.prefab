@@ -211,7 +211,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 41680dad0f0243748b4e228f49a2e3c4, type: 2}
+  - {fileID: 2100000, guid: b96eb9eeb3f1d413ea73aed406ac657b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -247,7 +247,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 4
   m_CollisionDetection: 0
 --- !u!64 &2829391462401209711
 MeshCollider:
@@ -2597,7 +2597,7 @@ SpringJoint:
   m_Damper: 0.2
   m_MinDistance: 0
   m_MaxDistance: 0
-  m_Tolerance: 0.025
+  m_Tolerance: 0.1
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_EnableCollision: 0
@@ -2773,7 +2773,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3449614654467513798}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ad4ee61dae4ef354a947cd379f4e26aa, type: 3}
   m_Name: 
@@ -2796,6 +2796,7 @@ MonoBehaviour:
   rigidbody: {fileID: 3449614653808047955}
   joint: {fileID: 7785170396760686635}
   ropePoint: {fileID: 9005392519084736020}
+  meshRenderer: {fileID: 3449614653808047957}
 --- !u!1 &9005392519084736020
 GameObject:
   m_ObjectHideFlags: 0
